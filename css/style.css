@@ -237,7 +237,7 @@ a {
 }
 .about-area .about-right ul li h2 {
     color: var(--ss-primary);
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 600;
     position: relative;
 }
@@ -247,15 +247,17 @@ a {
 }
 .about-area .about-right ul li h3 {
     color: #000;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 .about-area .about-right ul {
     margin: 3rem 0rem;
+    gap: 1rem;
 }
 .about-area .about-right ul li {
-    padding: 2rem;
+    padding: 1.5rem;
     border: 1px solid #ddd;
+    width: 100%;
 }
 .about-area .about-right {
     padding-left: 5rem;
@@ -326,7 +328,8 @@ a {
 /*Offer Area*/
 /*Process Area*/
 .process-area ul {
-    margin: 4rem 0rem 6.5rem;
+    margin: 4rem 0rem 4rem;
+    gap: 2rem;
 }
 .process-area .process-right {
     background-color: #F8F8F8;
@@ -342,6 +345,7 @@ a {
 .process-area ul li {
     border: 1px solid #ddd;
     padding: 2rem;
+    width: 100%;
 }
 .process-area ul li h3 {
     font-size: 6rem;
@@ -358,6 +362,10 @@ a {
     width: 20rem;
     height: 6rem;
 }
+
+.products-area {
+    background-color: #F8F8F8;
+}
 /*Resposive CSS*/
 @media (min-width: 1700px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -365,8 +373,19 @@ a {
   }
 }
 @media (max-width: 1700px) {
+    .about-area .about-right ul li h3 {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    .about-area .about-right ul li h2 {
+        margin-bottom: 1rem;
+        font-size: 4rem;
+    }
     .process-area ul {
         margin: 3rem 0rem 4.5rem;
+    }
+    .process-area ul li h5 {
+        font-size: 1.6rem;
     }
 }
 @media (max-width: 1399px) {
@@ -392,7 +411,7 @@ a {
         margin: 0rem 0rem 2.5rem;
     }
     .process-area ul li h5 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 }
 @media (min-width: 1400px) {
@@ -449,8 +468,8 @@ a {
         top: inherit;
         margin-left: inherit;
     }
-    .process-area ul li {
-        width: 100%;
+    .process-area ul li h5 {
+        font-size: 1.6rem;
     }
     .process-area .common-btn {
         width: 18rem;
@@ -516,7 +535,7 @@ a {
         font-size: 1.3rem;
     }
     .topbar-area ul {
-        justify-content: start;
+        justify-content: center;
     }
     .header-area .container .row {
         margin: 0rem 0rem;
@@ -558,12 +577,12 @@ a {
         font-size: 1.6rem;
     }
     .process-area .common-btn {
-        width: 15rem;
+        width: 100%;
         height: 4rem;
         font-size: 1.4rem;
     }
     .about-area .about-right .common-btn {
-        width: 15em;
+        width: 100%;
         height: 4rem;
         font-size: 1.4rem;
     }

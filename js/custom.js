@@ -35,7 +35,58 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //About Slider
 
+//Counter JS
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".about-box h2");
+  let started = false;
 
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const text = counter.childNodes[0].nodeValue.trim(); // "20" or "3k"
+      let target = 0;
+      let suffix = "";
+
+      if (text.toLowerCase().includes("k")) {
+        target = parseInt(text) * 1000;
+        suffix = "k";
+      } else {
+        target = parseInt(text);
+      }
+
+      let count = 0;
+      const speed = target / 100;
+
+      const update = () => {
+        if (count < target) {
+          count += speed;
+          if (suffix === "k") {
+            counter.childNodes[0].nodeValue =
+              Math.floor(count / 1000) + "k";
+          } else {
+            counter.childNodes[0].nodeValue = Math.floor(count);
+          }
+          requestAnimationFrame(update);
+        } else {
+          counter.childNodes[0].nodeValue = text;
+        }
+      };
+
+      counter.childNodes[0].nodeValue = "0";
+      update();
+    });
+  };
+
+  // Trigger only when visible
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting && !started) {
+      started = true;
+      animateCounters();
+    }
+  }, { threshold: 0.4 });
+
+  observer.observe(document.querySelector(".about-box"));
+});
+//Counter JS
 
 // /* Disable Right Click */
 // document.addEventListener('contextmenu', function (e) {
