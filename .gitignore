@@ -1,0 +1,7 @@
+node_modules/
+assets/video/
+images/*.mp4
+*.mp4
+*.zip
+*.rar
+.DS_Store
