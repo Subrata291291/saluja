@@ -500,7 +500,101 @@ a {
     font-size: 1.6rem;
     color: #000;
 }
+/*Form Area*/
+/*Footer Area*/
+.footer-area {
+    margin-top: 10rem;
+    padding: 8rem 0rem 3rem;
+    background-color: #000;
+}
+.footer-area .footer-left p {
+    color: #808080;
+    font-size: 1.6rem;
+    margin: 3rem 0rem;
+    max-width: 33rem;
+}
+.footer-area .footer-left ul {
+    gap: 1rem;
+}
+.footer-area .footer-left ul li a {
+    color: #fff;
+    background-color: #808080;
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-area .footer-left ul li a:hover {
+    background-color: var(--ss-primary);
+}
+.footer-area .footer-menu h3 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.footer-area .footer-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+.footer-area .footer-menu ul li a {
+    color: #808080;
+    font-size: 1.6rem;
+}
+.footer-area .footer-menu ul li a:hover {
+    color: var(--ss-primary);
+}
+.footer-area .footer-menu ul li a span {
+    color: var(--ss-primary);
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+.footer-area .copyright-area {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    border-top: 1px solid #80808057;
+}
+.footer-area .copyright-area p {
+    color: #808080;
+    font-size: 1.4rem;
+}
+.footer-area .copyright-area p span {
+    color: var(--ss-primary);
+}
+.footer-area .copyright-area ul {
+    gap: 1rem;
+    justify-content: end;
+}
+.footer-area .copyright-area ul li a {
+    color: #808080;
+    font-size: 1.4rem;
+}
+.footer-area .copyright-area ul li a:hover {
+    color: var(--ss-primary);
+}
 
+.form-modal .form-area .form-box form {
+    max-width: 100%;
+}
+.form-modal .btn-close {
+    right: 10px;
+    top: 10px;
+    background-color: var(--ss-primary);
+    opacity: 1;
+    padding: 1rem;
+    border-radius: 0rem;
+    z-index: 9;
+}
+.form-modal .modal-dialog {
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+}
 /*Resposive CSS*/
 @media (min-width: 1700px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -550,6 +644,9 @@ a {
     }
     .products-area .product-box ul li {
         max-width: 27rem;
+    }
+    .form-modal .modal-dialog {
+        max-width: 80%;
     }
 }
 @media (min-width: 1400px) {
@@ -617,6 +714,12 @@ a {
     .products-area .product-box ul li {
         max-width: 30rem;
     }
+    .footer-area .footer-menu h3 {
+        font-size: 2rem;
+    }
+    .footer-area {
+        margin-top: 6rem;
+    }
 }
 @media screen and (max-width: 991px) {
     .p-100 {
@@ -654,6 +757,18 @@ a {
     }
     .form-area .form-box {
         padding: 4rem;
+    }
+    .footer-area .footer-left p {
+        max-width: 100%;
+    }
+    .footer-area .footer-left {
+        margin-bottom: 4rem;
+    }
+    .footer-area .col-lg-6 {
+        text-align: center;
+    }
+    .footer-area .copyright-area {
+        padding-top: 3rem;
     }
 }
 @media screen and (min-width: 992px) {
@@ -774,6 +889,21 @@ a {
     }
     .form-area .form-box {
         padding: 4rem 2rem;
+    }
+    .footer-area .footer-menu:last-child {
+        margin-top: 4rem;
+    }
+    .footer-area .footer-left {
+        margin-bottom: 0rem;
+    }
+    .footer-area {
+        margin-top: 4rem;
+    }
+    .footer-area .footer-menu ul {
+        margin-top: 2rem;
+    }
+    .form-modal .modal-dialog {
+        max-width: 90%;
     }
 }
 @media screen and (max-width: 575px) {
