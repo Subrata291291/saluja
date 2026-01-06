@@ -362,10 +362,88 @@ a {
     width: 20rem;
     height: 6rem;
 }
-
+/*Process Area*/
+/*products Area*/
 .products-area {
     background-color: #F8F8F8;
 }
+.products-area .col-md-4 {
+    text-align: right;
+}
+.products-area .common-btn {
+    width: 20rem;
+    height: 6rem;
+    background-color: transparent;
+    border: 1px solid var(--ss-primary);
+}
+.products-area .common-btn:hover {
+    background-color: var(--ss-primary);
+}
+.products-area .title-box {
+    max-width: 60rem;
+}
+.products-area .product-box ul li h3 {
+    font-size: 2rem;
+}
+.products-area .product-box ul li h5 {
+    font-size: 1.6rem;
+    color: var(--ss-primary);
+    margin: 1rem 0rem;
+}
+.products-area .product-box ul li h5 span {
+    font-size: 1.2rem;
+    color: #808080;
+    font-weight: 400;
+}
+.products-area .product-box {
+    margin-top: 4rem;
+}
+.products-area .product-box ul li p {
+    font-size: 1.4rem;
+}
+.products-area .product-box .product-pic {
+    margin-bottom: 2rem;
+    position: relative;
+}
+.products-area .product-box ul li {
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0.5px 0.5px 2px 0 rgba(0, 0, 0, 0.15);
+}
+.products-area .product-box .common-btn {
+    width: 14rem;
+    height: 4rem;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--ss-primary);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+.products-area .product-box ul li .common-btn:hover {
+    background-color: #000;
+    border-color: #000;
+}
+.products-area .product-box ul li:hover .common-btn {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s;
+}
+.products-area .product-box ul {
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    justify-content: space-between;
+}
+.products-area .product-box ul li {
+    max-width: 30rem;
+    width: 100%;
+}
+/*products Area*/
+
+
 /*Resposive CSS*/
 @media (min-width: 1700px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -412,6 +490,9 @@ a {
     }
     .process-area ul li h5 {
         font-size: 1.5rem;
+    }
+    .products-area .product-box ul li {
+        max-width: 27rem;
     }
 }
 @media (min-width: 1400px) {
@@ -467,6 +548,7 @@ a {
         right: inherit;
         top: inherit;
         margin-left: inherit;
+        background-color: #fff;
     }
     .process-area ul li h5 {
         font-size: 1.6rem;
@@ -474,6 +556,9 @@ a {
     .process-area .common-btn {
         width: 18rem;
         height: 5rem;
+    }
+    .products-area .product-box ul li {
+        max-width: 30rem;
     }
 }
 @media screen and (max-width: 991px) {
@@ -506,6 +591,9 @@ a {
     }
     .offer-area .service-tabs .nav-link {
         padding: 1rem 1.5rem;
+    }
+    .products-area .product-box ul li {
+        max-width: 48%;
     }
 }
 @media screen and (min-width: 992px) {
@@ -587,6 +675,30 @@ a {
     .process-area ul {
         flex-direction: column;
         gap: 1rem;
+    }
+    .products-area .product-box ul {
+        column-gap: 1rem;
+    }
+    .products-area .product-box ul li {
+        max-width: 48%;
+    }
+    .products-area .product-box ul li h3 {
+        font-size: 1.6rem;
+    }
+    .products-area .product-box ul li p {
+        font-size: 1.2rem;
+    }
+    .products-area .product-box ul li h5 {
+        font-size: 1.4rem;
+    }
+    .products-area .product-box ul li h5 span {
+        font-size: 1rem;
+    }
+    .products-area .product-box ul {
+        row-gap: 1rem;
+    }
+    .products-area .product-box {
+        margin-top: 0rem;
     }
 }
 @media screen and (max-width: 575px) {
