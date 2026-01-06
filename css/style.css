@@ -442,7 +442,64 @@ a {
     width: 100%;
 }
 /*products Area*/
-
+/*Form Area*/
+.form-area .form-box {
+    background: url(../images/form-bg.png) no-repeat;
+    background-position: center;
+    padding: 7.4rem;
+    position: relative;
+}
+.form-area form {
+    position: relative;
+    margin-top: 4rem;
+}
+.form-area .title-box {
+    position: relative;
+}
+.form-area .form-box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(262deg, rgba(229, 39, 39, 1) -120%, rgba(0, 0, 0, 0.8) 100%);
+}
+.form-area .form-box form {
+    max-width: 70rem;
+}
+.form-area .form-box form .common-btn {
+    width: 100%;
+    height: 6rem;
+    text-transform: uppercase;
+    border-radius: 5rem;
+    margin-top: 1rem;
+}
+.form-area .form-box form .custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* custom arrow */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 2rem center;
+}
+.form-area .form-box .row {
+    row-gap: 2rem;
+}
+.form-area .form-box .title-box h3 {
+    color: #fff;
+}
+.form-area .form-box form input, select {
+    width: 100%;
+    border: none;
+    border-radius: 5rem;
+    height: 5.5rem;
+    padding: 0rem 2rem;
+    outline: none;
+    font-size: 1.6rem;
+    color: #000;
+}
 
 /*Resposive CSS*/
 @media (min-width: 1700px) {
@@ -595,6 +652,9 @@ a {
     .products-area .product-box ul li {
         max-width: 48%;
     }
+    .form-area .form-box {
+        padding: 4rem;
+    }
 }
 @media screen and (min-width: 992px) {
 
@@ -680,7 +740,7 @@ a {
         column-gap: 1rem;
     }
     .products-area .product-box ul li {
-        max-width: 48%;
+        max-width: 48.7%;
     }
     .products-area .product-box ul li h3 {
         font-size: 1.6rem;
@@ -700,6 +760,21 @@ a {
     .products-area .product-box {
         margin-top: 0rem;
     }
+    .form-area .form-box form input, select {
+        height: 4rem;
+    }
+    .form-area .title-box {
+        text-align: center;
+    }
+    .form-area .title-box h4 {
+        margin-left: 0rem;
+    }
+    .form-area .title-box h4 span {
+        display: none;
+    }
+    .form-area .form-box {
+        padding: 4rem 2rem;
+    }
 }
 @media screen and (max-width: 575px) {
     
@@ -708,6 +783,9 @@ a {
     .banner-area .banner-content h1 {
         font-size: 3rem;
         line-height: 4rem;
+    }
+    .products-area .product-box ul li {
+        max-width: 48%;
     }
 }
 @media screen and (max-width: 375px) {

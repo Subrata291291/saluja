@@ -35,6 +35,43 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //About Slider
 
+//Brand Slider
+document.addEventListener("DOMContentLoaded", function () {
+
+  new Swiper(".brand-swiper", {
+    loop: true,
+    speed: 800,                  
+    spaceBetween: 25,
+
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    grabCursor: false,
+
+    slidesPerView: "auto",         
+    freeMode: true,                
+    freeModeMomentum: false,
+
+    breakpoints: {
+      320: { slidesPerView: 3, spaceBetween: 15 },
+      768: { slidesPerView: 4 },
+      1024: { slidesPerView: 5 },
+      1440: { slidesPerView: 6 },
+    },
+  });
+});
+//Brand Slider
+
 //Counter JS
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".about-box h2");
