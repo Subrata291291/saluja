@@ -825,6 +825,9 @@ a {
     .header-area {
         top: 6rem;
     }
+    .header-area .header-left img {
+        max-width: 5rem;
+    }
     .topbar-area ul {
         gap: 1.5rem;
     }
