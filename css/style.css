@@ -133,6 +133,9 @@ a {
 .header-area .header-right ul li a:hover {
     color: var(--ss-primary);
 }
+.header-area .header-left img {
+    max-width: 7rem;
+}
 .header-area .header-right .common-btn {
     width: 20rem;
     height: 6rem;
@@ -145,9 +148,46 @@ a {
 }
 .header-area .container .row {
     background-color: #fff;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 /*Header CSS*/
+/*Offcanvas Mneu*/
+.mobile-menu-area #offcanvasRightLabel img {
+    max-width: 5rem;
+}
+.mobile-menu-area .offcanvas-body ul {
+    display: flex;
+    flex-direction: column;
+}
+.mobile-menu-area .offcanvas-body ul li a {
+    color: #000;
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+}
+.mobile-menu-area .offcanvas-body ul li {
+    border-bottom: 1px solid var(--ss-primary);
+}
+.mobile-menu-area .offcanvas-body ul li:last-child {
+    border: none;
+}
+.mobile-menu-area .offcanvas-body ul li a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+}
+.mobile-menu-area .offcanvas-body ul li a.active {
+    background-color: var(--ss-primary);
+}
+.mobile-menu-area .offcanvas.offcanvas-end {
+    background-color: #000000d4;
+}
+.mobile-menu-area .btn-close {
+    opacity: 1;
+    filter: invert(1);
+}
+.mobile-menu-area .offcanvas-header {
+    padding: 2rem 2rem 1rem;
+}
 
 /*Banner Area*/
 .banner-area {
@@ -321,6 +361,7 @@ a {
 }
 .offer-area .table>:not(caption)>*>* {
     padding: 1rem;
+    text-transform: uppercase;
 }
 .offer-area .col-md-4 {
     text-align: right;
@@ -506,6 +547,9 @@ a {
     margin-top: 10rem;
     padding: 8rem 0rem 3rem;
     background-color: #000;
+}
+.footer-area .footer-left img {
+    max-width: 8rem;
 }
 .footer-area .footer-left p {
     color: #808080;
