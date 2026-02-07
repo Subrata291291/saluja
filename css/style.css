@@ -19,6 +19,7 @@ body {
   font-style: normal;
   font-size: 14px;
   color: #000;
+  overflow-x: hidden;
 }
 p {
     font-family: var(--ss-montserrat);
