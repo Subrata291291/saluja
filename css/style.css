@@ -590,6 +590,7 @@ a {
 .footer-area .footer-menu ul li a {
     color: #808080;
     font-size: 1.6rem;
+    letter-spacing: 0.1rem;
 }
 .footer-area .footer-menu ul li a:hover {
     color: var(--ss-primary);
@@ -608,6 +609,7 @@ a {
     color: #808080;
     font-size: 1.4rem;
     font-family: var(--ss-orbitron);
+    letter-spacing: 0.1rem;
 }
 .footer-area .copyright-area p span {
     color: var(--ss-primary);
@@ -619,6 +621,7 @@ a {
 .footer-area .copyright-area ul li a {
     color: #808080;
     font-size: 1.4rem;
+    letter-spacing: 0.1rem;
 }
 .footer-area .copyright-area ul li a:hover {
     color: var(--ss-primary);
