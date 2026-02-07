@@ -769,24 +769,14 @@
     <!--Slick JS-->
     <script src="js/custom.js"></script>
     <!--Slick JS-->
-    <!---animation-js-->
-    <script src="js/aos.js"></script>
-    <script>
-      // Init AOS
-      function aos_init() {
-        AOS.init({
-          duration: 1000,
-          easing: "ease-in-out-back",
-          once: true
-        });
-      }
-      $(window).on('load', function() {
-        aos_init();
-      });
-    </script>
-    <!---animation-js-->
+    <!---GSAP-js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="js/custom-gsap.js"></script>
+    <!---GSAP-js-->
     <!---fancybox---->
     <script src="js/fancybox.min.js"></script>
     <!---fancybox---->
   </body>
 </html>
+  
