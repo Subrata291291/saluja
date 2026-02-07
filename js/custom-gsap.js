@@ -28,7 +28,6 @@ gsap.from(".header-right button", {
   clearProps: "all"
 });
 
-
 let bannerTl = gsap.timeline({
   scrollTrigger: {
     trigger: ".banner-area",
@@ -239,10 +238,6 @@ gsap.from(
     clearProps: "all"
   }
 );
-
-
-
-gsap.registerPlugin(ScrollTrigger);
 
 document.body.style.overflow = "hidden";
 
