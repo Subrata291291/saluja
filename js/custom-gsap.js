@@ -184,7 +184,7 @@ productsTl
 
 let formTl = gsap.timeline({
   scrollTrigger: {
-    trigger: ".form-area",
+    trigger: ".forms-area",
     start: "top 80%",
     toggleActions: "play none none none"
     // toggleActions: "play reverse play reverse"
@@ -192,23 +192,23 @@ let formTl = gsap.timeline({
 });
 
 formTl
-.from(".form-area .title-box h4", {
+.from(".forms-area .title-box h4", {
     opacity: 0,
     x: -50,
     duration: 0.5
   })
-  .from(".form-area .title-box h3", {
+  .from(".forms-area .title-box h3", {
     opacity: 0,
     x: -50,
     duration: 0.5
   })
-  .from(".form-area .common-btn", {
+  .from(".forms-area .common-btn", {
     opacity: 0,
     x: 50,
     duration: 0.5,
     clearProps: "all"
   })
-  .from(".form-area input", {
+  .from(".forms-area input", {
     x: -80,
     opacity: 0,
     duration: 1,
