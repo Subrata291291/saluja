@@ -179,7 +179,7 @@ a {
     background-color: var(--ss-primary);
 }
 .mobile-menu-area .offcanvas.offcanvas-end {
-    background-color: #000000d4;
+    background-color: #000000f0;
 }
 .mobile-menu-area .btn-close {
     opacity: 1;
@@ -851,14 +851,19 @@ a {
         margin: 0rem 0rem;
     }
     .header-area .header-right .common-btn {
-        width: 15rem;
+        padding: 1rem 1.5rem;
+        width: auto;
         height: 4rem;
         font-size: 1.4rem;
     }
     .banner-area .banner-content .common-btn {
-        width: 15rem;
+        padding: 1rem 1.5rem;
+        width: auto;
         height: 4rem;
         font-size: 1.4rem;
+    }
+    .form-area .form-box form .common-btn {
+        height: 5rem;
     }
     .title-box h3 {
         font-size: 2.5rem;
@@ -942,9 +947,17 @@ a {
     }
     .footer-area .footer-left {
         margin-bottom: 0rem;
+        text-align: center;
     }
     .footer-area {
         margin-top: 4rem;
+        padding: 3rem 0rem 3rem;
+    }
+    .footer-area .footer-menu ul li a {
+        font-weight: 300;
+    }
+    .footer-area .footer-left ul {
+        justify-content: center;
     }
     .footer-area .footer-menu ul {
         margin-top: 2rem;
