@@ -65,8 +65,8 @@ bannerTl
   scrollTrigger: {
     trigger: ".about-area",
     start: "top 80%",
-    // toggleActions: "play none none none"
-    toggleActions: "play reverse play reverse"
+    toggleActions: "play none none none"
+    // toggleActions: "play reverse play reverse"
   }
 });
 
@@ -89,7 +89,7 @@ aboutTl
   scrollTrigger: {
     trigger: ".offer-area",
     start: "top 70%",   // when banner top hits 70% of viewport
-    toggleActions: "play reverse play reverse"
+    toggleActions: "play none play none"
   }
 });
 
@@ -143,8 +143,8 @@ offerTl
   scrollTrigger: {
     trigger: ".process-area",
     start: "top 80%",
-    // toggleActions: "play none none none"
-    toggleActions: "play reverse play reverse"
+    toggleActions: "play none none none"
+    // toggleActions: "play reverse play reverse"
   }
 });
 
