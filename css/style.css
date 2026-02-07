@@ -489,8 +489,9 @@ a {
 /*products Area*/
 /*Form Area*/
 .form-area .form-box {
-    background: url(../images/form-bg.png) no-repeat;
+    background: url(../images/about-5.jpg) no-repeat;
     background-position: center;
+    background-size: cover;
     padding: 7.4rem;
     position: relative;
 }
