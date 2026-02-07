@@ -94,17 +94,17 @@ aboutTl
 });
 
 offerTl
-  .from(".offer-area .title-box h4", {
+  .from(".title-box h4", {
     opacity: 0,
     x: -50,
     duration: 0.5
   })
-  .from(".offer-area .title-box h3", {
+  .from(".title-box h3", {
     opacity: 0,
     x: -50,
     duration: 0.5
   })
-  .from(".offer-area .common-btn", {
+  .from(".common-btn", {
     opacity: 0,
     x: 50,
     duration: 0.5,
@@ -139,7 +139,7 @@ offerTl
   })
 
 
-  let processTl = gsap.timeline({
+let processTl = gsap.timeline({
   scrollTrigger: {
     trigger: ".process-area",
     start: "top 80%",
@@ -161,3 +161,65 @@ processTl
     duration: 1,
     clearProps: "transform"
   });
+
+
+  let productsTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".products-area",
+    start: "top 80%",
+    toggleActions: "play none none none"
+    // toggleActions: "play reverse play reverse"
+  }
+});
+
+productsTl
+  .from(".products-area .product-box ul li", {
+    y: 80,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.3,
+    clearProps: "transform"
+  });
+
+
+let formTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".form-area",
+    start: "top 80%",
+    toggleActions: "play none none none"
+    // toggleActions: "play reverse play reverse"
+  }
+});
+
+formTl
+  .from(".form-area input", {
+    x: -80,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.3,
+    clearProps: "transform"
+  })
+
+gsap.from(
+  [
+    ".footer-area .footer-left img",
+    ".footer-area .footer-left p",
+    ".footer-area .footer-menu h3",
+    ".footer-area .footer-left ul li",
+    ".footer-area .footer-menu ul li",
+    ".copyright-area p",
+    ".copyright-area ul li"
+  ],
+  {
+    scrollTrigger: {
+      trigger: ".footer-area",
+      start: "top 80%",
+      toggleActions: "play none none none"
+    },
+    y: 40,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.1,
+    clearProps: "all"
+  }
+);
