@@ -845,6 +845,15 @@ a {
     }
     .banner-area .banner-content p {
         font-size: 1.6rem;
+        line-height: 2.7rem;
+    }
+    .about-area .about-right p {
+        font-size: 1.6rem;
+        line-height: 2.7rem;
+    }
+    .offer-area .tab-content p {
+        font-size: 1.6rem;
+        line-height: 2.7rem;
     }
     .topbar-area ul li a {
         font-size: 1.2rem;
