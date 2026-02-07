@@ -1,4 +1,4 @@
-var tl = gsap.timeline();
+
 gsap.registerPlugin(ScrollTrigger); //Registered ScrollTrigger Plugin
 
 gsap.from(".topbar-area ul li", {
@@ -94,17 +94,17 @@ aboutTl
 });
 
 offerTl
-  .from(".title-box h4", {
+  .from(".offer-area .title-box h4", {
     opacity: 0,
     x: -50,
     duration: 0.5
   })
-  .from(".title-box h3", {
+  .from(".offer-area .title-box h3", {
     opacity: 0,
     x: -50,
     duration: 0.5
   })
-  .from(".common-btn", {
+  .from(".offer-area .common-btn", {
     opacity: 0,
     x: 50,
     duration: 0.5,
@@ -192,6 +192,22 @@ let formTl = gsap.timeline({
 });
 
 formTl
+.from(".form-area .title-box h4", {
+    opacity: 0,
+    x: -50,
+    duration: 0.5
+  })
+  .from(".form-area .title-box h3", {
+    opacity: 0,
+    x: -50,
+    duration: 0.5
+  })
+  .from(".form-area .common-btn", {
+    opacity: 0,
+    x: 50,
+    duration: 0.5,
+    clearProps: "all"
+  })
   .from(".form-area input", {
     x: -80,
     opacity: 0,
@@ -223,3 +239,58 @@ gsap.from(
     clearProps: "all"
   }
 );
+
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.body.style.overflow = "hidden";
+
+let loaderTl = gsap.timeline({
+  defaults: { ease: "power3.out" },
+  onComplete: () => {
+    document.body.style.overflow = "auto";
+    document.getElementById("page-loader").remove();
+    ScrollTrigger.refresh(true);
+  }
+});
+
+loaderTl
+  // Logo power-on
+  .to(".loader-logo", {
+    opacity: 1,
+    scale: 1,
+    filter: "blur(0px)",
+    duration: 1.2
+  })
+
+  // Engine vibration (subtle)
+  .to(".loader-logo", {
+    x: 2,
+    repeat: 6,
+    yoyo: true,
+    duration: 0.05
+  })
+
+  // Speed bar acceleration
+  .to(".loader-bar", {
+    width: "100%",
+    duration: 0.9,
+    ease: "power4.inOut"
+  }, "-=0.4")
+
+  // Text reveal
+  .to(".loader-text-wrap h1", {
+    y: 0,
+    duration: 0.8
+  }, "-=0.4")
+
+  // Small pause (impact)
+  .to({}, { duration: 0.3 })
+
+  // Exit animation (car launch feel)
+  .to("#page-loader", {
+    y: "-100%",
+    duration: 1,
+    ease: "power4.inOut"
+  });

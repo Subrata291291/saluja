@@ -21,6 +21,19 @@ body {
   color: #000;
   overflow-x: hidden;
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+.banner-area,
+.about-area,
+.offer-area,
+.process-area,
+.products-area,
+.form-area,
+.footer-area {
+  overflow-x: hidden;
+}
 p {
     font-family: var(--ss-montserrat);
 }
@@ -781,6 +794,9 @@ a {
     }
 }
 @media screen and (max-width: 991px) {
+    #page-loader h1 {
+        font-size: 2rem;
+    }
     .p-100 {
         padding: 5rem 0rem;
     }
