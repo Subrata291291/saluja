@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Playwrite+NZ+Basic:wght@100..400&display=swap');
 
 :root {
-  --ss-poppins: "Poppins", sans-serif;
-  --ss-nunito: "Nunito", sans-serif;
+  --ss-playwrite: "Playwrite NZ Basic", cursive;
+  --ss-orbitron: "Orbitron", sans-serif;
+  --ss-montserrat: "Montserrat", sans-serif;
   --ss-font500: 500;
   --ss-font600: 600;
   --ss-font700: 700;
@@ -13,14 +14,14 @@
 }
 
 body {
-  font-family: var(--ss-poppins);
+  font-family: var(--ss-orbitron);
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   color: #000;
 }
 p {
-    font-family: var(--ss-nunito);
+    font-family: var(--ss-montserrat);
 }
 ul, li, p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -71,17 +72,20 @@ a {
     line-height: 5.5rem;
     font-weight: 600;
     color: var(--ss-secondary);
+    letter-spacing: 0.1rem;
 }
 .title-box h3 span {
     color: var(--ss-primary);
 }
 .common-btn {
     background-color: var(--ss-primary);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
     border: none;
     transition: all 0.3s;
+    width: auto;
+    padding: 1.5rem 2rem;
 }
 .common-btn:hover {
     background-color: var(--ss-secondary);
@@ -95,14 +99,15 @@ a {
 .topbar-area {
     background-color: var(--ss-secondary);
     padding: 1.3rem 0rem;
+    border-bottom: 1px solid #4b4b4b;
 }
 .topbar-area ul {
     gap: 2rem;
 }
 .topbar-area ul li a {
     color: #fff;
-    font-size: 1.3rem;
-    line-height: 2.2rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
 }
 .topbar-area .topbar-right ul li a:hover {
     color: var(--ss-primary);
@@ -136,10 +141,6 @@ a {
 .header-area .header-left img {
     max-width: 7rem;
 }
-.header-area .header-right .common-btn {
-    width: 20rem;
-    height: 6rem;
-}
 .header-area {
     position: absolute;
     top: 10rem;
@@ -161,8 +162,9 @@ a {
 }
 .mobile-menu-area .offcanvas-body ul li a {
     color: #000;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     padding: 2rem 1rem;
+    letter-spacing: 0.1rem;
 }
 .mobile-menu-area .offcanvas-body ul li {
     border-bottom: 1px solid var(--ss-primary);
@@ -238,19 +240,19 @@ a {
     font-size: 7rem;
     color: #fff;
     font-weight: 600;
-    line-height: 8rem;
-    max-width: 72rem;
+    line-height: 9rem;
+    max-width: 100rem;
     margin: 2rem 0rem 2.5rem;
+    letter-spacing: 0.1rem;
 }
 .banner-area .banner-content p {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    line-height: 3.2rem;
     color: #fff;
     font-weight: 400;
     max-width: 72rem;
 }
 .banner-area .banner-content .common-btn {
-    width: 20rem;
-    height: 6rem;
     margin-top: 3rem;
     border: 1px solid var(--ss-primary);
 }
@@ -272,8 +274,8 @@ a {
   height: 100%;
 }
 .about-area .about-right p {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    font-size: 1.7rem;
+    line-height: 3.2rem;
 }
 .about-area .about-right ul li h2 {
     color: var(--ss-primary);
@@ -289,6 +291,7 @@ a {
     color: #000;
     font-size: 1.8rem;
     font-weight: 600;
+    margin-top: 1rem;
 }
 .about-area .about-right ul {
     margin: 3rem 0rem;
@@ -303,8 +306,6 @@ a {
     padding-left: 5rem;
 }
 .about-area .about-right .common-btn {
-    width: 22.5rem;
-    height: 6rem;
     margin-top: 3rem;
 }
 .swiper-button-next, .swiper-button-prev {
@@ -318,11 +319,11 @@ a {
     background-color: #F8F8F8;
 }
 .offer-area .title-box {
-    max-width: 60rem;
+    max-width: 75rem;
 }
 .offer-area .common-btn {
-    width: 20rem;
-    height: 6rem;
+    width: auto;
+    padding: 1.5rem 2rem;
     background-color: transparent;
     border: 1px solid var(--ss-primary);
 }
@@ -353,8 +354,7 @@ a {
     margin-bottom: 1.5rem;
 }
 .offer-area .tab-content p {
-    font-size: 1.6rem;
-    font-weight: 500;
+    font-size: 1.7rem;
 }
 .offer-area .table-responsive {
     margin-top: 2rem;
@@ -362,6 +362,8 @@ a {
 .offer-area .table>:not(caption)>*>* {
     padding: 1rem;
     text-transform: uppercase;
+    font-weight: 500;
+    font-family: var(--ss-orbitron);
 }
 .offer-area .col-md-4 {
     text-align: right;
@@ -395,13 +397,13 @@ a {
     color: var(--ss-primary);
 }
 .process-area ul li h5 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     margin-top: 1rem;
 }
 .process-area .common-btn {
-    width: 20rem;
-    height: 6rem;
+    width: auto;
+    padding: 1.5rem 2rem;
 }
 /*Process Area*/
 /*products Area*/
@@ -412,8 +414,6 @@ a {
     text-align: right;
 }
 .products-area .common-btn {
-    width: 20rem;
-    height: 6rem;
     background-color: transparent;
     border: 1px solid var(--ss-primary);
 }
@@ -452,9 +452,8 @@ a {
     box-shadow: 0.5px 0.5px 2px 0 rgba(0, 0, 0, 0.15);
 }
 .products-area .product-box .common-btn {
-    width: 14rem;
-    height: 4rem;
     font-size: 1.4rem;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -552,10 +551,12 @@ a {
     max-width: 8rem;
 }
 .footer-area .footer-left p {
+    line-height: 3.2rem;
+    font-family: 'Orbitron';
     color: #808080;
     font-size: 1.6rem;
     margin: 3rem 0rem;
-    max-width: 33rem;
+    max-width: 40rem;
 }
 .footer-area .footer-left ul {
     gap: 1rem;
@@ -606,6 +607,7 @@ a {
 .footer-area .copyright-area p {
     color: #808080;
     font-size: 1.4rem;
+    font-family: var(--ss-orbitron);
 }
 .footer-area .copyright-area p span {
     color: var(--ss-primary);
@@ -701,8 +703,14 @@ a {
         gap: 1rem;
     }
     .topbar-area ul li a {
-        font-size: 1.3rem;
+        font-size: 1rem;
         line-height: inherit
+    }
+    .topbar-area .topbar-right ul li a {
+        font-size: 1.4rem;
+    }
+    .header-area .header-right ul li a {
+        font-size: 1.4rem;
     }
     .header-area .header-right {
         gap: 2rem;
@@ -714,27 +722,11 @@ a {
     .banner-area .banner-content {
         padding: 22rem 0rem 10rem;
     }
-    .header-area .header-right .common-btn {
-        width: 18rem;
-        height: 5rem;
-    }
     .header-area .container .row {
         padding: 1rem 0.5rem;
     }
-    .banner-area .banner-content .common-btn {
-        width: 18rem;
-        height: 5rem;
-    }
     .about-area .about-right {
         padding-left: 2rem;
-    }
-    .about-area .about-right .common-btn {
-        width: 15em;
-        height: 5rem;
-    }
-    .offer-area .common-btn {
-        width: 20rem;
-        height: 5rem;
     }
     .offer-area .service-tabs .nav-link {
         padding: 1rem 2rem;
@@ -751,18 +743,31 @@ a {
     .process-area ul li h5 {
         font-size: 1.6rem;
     }
-    .process-area .common-btn {
-        width: 18rem;
-        height: 5rem;
-    }
     .products-area .product-box ul li {
         max-width: 30rem;
     }
     .footer-area .footer-menu h3 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     .footer-area {
         margin-top: 6rem;
+    }
+    .footer-area .footer-menu ul li a {
+        font-size: 1.3rem;
+        letter-spacing: 0.1rem;
+    }
+    .footer-area .footer-left p {
+        line-height: 2.6rem;
+        font-size: 1.3rem;
+        max-width: 27rem;
+    }
+    .footer-area .copyright-area p {
+        font-size: 1.3rem;
+        letter-spacing: 0.1rem;
+    }
+    .footer-area .copyright-area ul li a {
+        font-size: 1.3rem;
+        letter-spacing: 0.1rem;
     }
 }
 @media screen and (max-width: 991px) {
@@ -773,7 +778,7 @@ a {
         font-size: 1.1rem;
     }
     .topbar-area ul {
-        justify-content: center;
+        justify-content: space-between;
     }
     .topbar-area ul li a span {
         margin-right: 0.2rem;
@@ -842,32 +847,33 @@ a {
         font-size: 1.6rem;
     }
     .topbar-area ul li a {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
-    .topbar-area ul {
+    .offer-area .table>:not(caption)>*>* {
+        font-size: 1.2rem;
+    }
+    /* .topbar-area ul {
         justify-content: center;
-    }
+    } */
     .header-area .container .row {
         margin: 0rem 0rem;
     }
     .header-area .header-right .common-btn {
         padding: 1rem 1.5rem;
         width: auto;
-        height: 4rem;
         font-size: 1.4rem;
     }
     .banner-area .banner-content .common-btn {
         padding: 1rem 1.5rem;
         width: auto;
-        height: 4rem;
         font-size: 1.4rem;
     }
     .form-area .form-box form .common-btn {
         height: 5rem;
     }
     .title-box h3 {
-        font-size: 2.5rem;
-        line-height: 3.5rem;
+        font-size: 2rem;
+        line-height: 3.2rem;
     }
     .about-area .about-right ul {
         flex-direction: column;
@@ -965,9 +971,17 @@ a {
     .form-modal .modal-dialog {
         max-width: 90%;
     }
+    .footer-area .copyright-area p {
+        font-size: 1.2rem;
+    }
 }
 @media screen and (max-width: 575px) {
-    
+    .topbar-area ul li a {
+        font-size: 1.1rem;
+    }
+    .header-area .header-right .common-btn {
+        font-size: 1.2rem;
+    }
 }
 @media screen and (max-width: 480px) {
     .banner-area .banner-content h1 {
@@ -977,6 +991,10 @@ a {
     .products-area .product-box ul li {
         max-width: 48%;
     }
+    .topbar-area ul li a {
+        font-size: 1rem;
+    }
+
 }
 @media screen and (max-width: 375px) {
     
